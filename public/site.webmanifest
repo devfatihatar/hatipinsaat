@@ -1,0 +1,18 @@
+{
+  "name": "Hatip İnşaat",
+  "short_name": "Hatip İnşaat",
+  "description": "Antalya konut ve villa projeleri",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf8ea",
+  "theme_color": "#0d3a37",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

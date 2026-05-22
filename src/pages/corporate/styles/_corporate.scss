@@ -1,0 +1,201 @@
+.corporate-page {
+  min-height: 100vh;
+  background: #fbf8ea;
+}
+
+.corporate-story {
+  position: relative;
+  overflow: hidden;
+  background: #fbf8ea;
+  color: var(--color-ink);
+}
+
+.corporate-story__top,
+.corporate-story__bottom {
+  position: relative;
+}
+
+.corporate-story__top::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-image:
+    radial-gradient(ellipse at 20% 20%, rgba(255, 255, 255, 0.07) 0 1px, transparent 1px),
+    radial-gradient(ellipse at 80% 35%, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px);
+  background-size: 78px 46px, 112px 70px;
+  opacity: 0.34;
+  pointer-events: none;
+}
+
+.corporate-story__top {
+  display: grid;
+  justify-items: center;
+  min-height: 610px;
+  padding: clamp(134px, 14vw, 182px) 24px 230px;
+  background:
+    radial-gradient(circle at 14% 18%, rgba(244, 123, 32, 0.16), transparent 28%),
+    linear-gradient(135deg, #141414, #2f343a 58%, #101114);
+  color: #fff;
+  text-align: center;
+}
+
+.corporate-story__intro {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  width: min(820px, 100%);
+}
+
+.corporate-story h1 {
+  margin: 0 0 clamp(54px, 6vw, 80px);
+  color: #fff;
+  font-size: clamp(4.2rem, 6.2vw, 7.8rem);
+  font-weight: 400;
+  line-height: 0.9;
+  text-shadow: 0 16px 44px rgba(0, 0, 0, 0.32);
+}
+
+.corporate-story__intro p {
+  max-width: 620px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: clamp(1.06rem, 1.28vw, 1.34rem);
+  font-weight: 900;
+  line-height: 1.38;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.44);
+}
+
+.corporate-story__media {
+  position: relative;
+  z-index: 2;
+  width: min(1120px, calc(100vw - 72px));
+  margin: -176px auto -124px;
+  box-shadow: 0 24px 70px rgba(16, 17, 20, 0.22);
+}
+
+.corporate-story__media::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: rgba(16, 17, 20, 0.24);
+  pointer-events: none;
+}
+
+.corporate-story__media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 8.4;
+  object-fit: cover;
+}
+
+.corporate-story__bottom {
+  padding: 180px 24px clamp(86px, 9vw, 128px);
+  background: #fbf8ea;
+}
+
+.corporate-story__statement,
+.corporate-story__detail {
+  position: relative;
+  z-index: 1;
+}
+
+.corporate-story__statement {
+  width: min(980px, 100%);
+  margin: 0 auto clamp(62px, 7vw, 88px);
+  color: #4d4a42;
+  font-size: clamp(1.6rem, 2.4vw, 2.7rem);
+  font-weight: 400;
+  line-height: 1.26;
+  text-align: center;
+}
+
+.corporate-story__statement strong,
+.corporate-story__statement b {
+  color: var(--color-ink);
+  font-weight: 900;
+}
+
+.corporate-story__detail {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.78fr) minmax(300px, 0.92fr);
+  align-items: center;
+  gap: clamp(42px, 6vw, 92px);
+  width: min(760px, 100%);
+  margin: 0 auto;
+}
+
+.corporate-story__detail p {
+  margin: 0;
+  color: #33342f;
+  font-size: clamp(1.04rem, 1.2vw, 1.22rem);
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.corporate-story__detail img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5.2;
+  object-fit: cover;
+  box-shadow: 0 16px 44px rgba(16, 17, 20, 0.12);
+}
+
+@media (max-width: 860px) {
+  .corporate-story__top {
+    min-height: 520px;
+    padding: 172px 20px 150px;
+  }
+
+  .corporate-story h1 {
+    margin-bottom: 34px;
+    font-size: clamp(3.1rem, 13vw, 5rem);
+  }
+
+  .corporate-story__intro p {
+    font-size: clamp(0.86rem, 3.4vw, 1.1rem);
+  }
+
+  .corporate-story__media {
+    width: calc(100vw - 44px);
+    margin: -104px auto -58px;
+  }
+
+  .corporate-story__media img {
+    aspect-ratio: 16 / 10.8;
+  }
+
+  .corporate-story__bottom {
+    padding: 96px 22px 72px;
+  }
+
+  .corporate-story__statement {
+    margin-bottom: 48px;
+    font-size: clamp(1.36rem, 6.4vw, 2.1rem);
+  }
+
+  .corporate-story__detail {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    width: min(420px, 100%);
+  }
+
+  .corporate-story__detail img {
+    aspect-ratio: 4 / 4.8;
+  }
+}
+
+@media (max-width: 520px) {
+  .corporate-story__top {
+    padding-top: 166px;
+  }
+
+  .corporate-story__intro p {
+    line-height: 1.5;
+  }
+
+  .corporate-story__statement {
+    text-align: left;
+  }
+}

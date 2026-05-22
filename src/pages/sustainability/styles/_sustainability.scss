@@ -1,0 +1,357 @@
+.sustainability-page {
+  min-height: 100vh;
+  background: #fbf8ea;
+}
+
+.sustainability-story {
+  position: relative;
+  background: #fbf8ea;
+  color: var(--color-ink);
+}
+
+.sustainability-story__hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 142px 24px 86px;
+  overflow: hidden;
+  background: var(--sustainability-hero-bg) center / cover no-repeat fixed;
+  color: #fff;
+  text-align: center;
+}
+
+.sustainability-story__hero-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  width: min(1040px, calc(100vw - 48px));
+  padding: clamp(28px, 4vw, 52px);
+  overflow-wrap: anywhere;
+}
+
+.sustainability-story__hero-inner::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 50% 15%, rgba(0, 0, 0, 0.28), transparent 62%),
+    rgba(10, 12, 14, 0.38);
+  box-shadow: 0 24px 90px rgba(0, 0, 0, 0.42);
+  filter: blur(0);
+}
+
+.sustainability-story__hero h1 {
+  max-width: 100%;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(4.4rem, 7vw, 8.4rem);
+  font-weight: 400;
+  line-height: 0.95;
+  text-shadow: 0 16px 42px rgba(0, 0, 0, 0.52);
+  word-break: normal;
+}
+
+.sustainability-story__hero p {
+  width: min(620px, 100%);
+  margin: clamp(34px, 4vw, 54px) 0 0;
+  color: rgba(255, 255, 255, 0.96);
+  font-size: clamp(1.04rem, 1.18vw, 1.28rem);
+  font-weight: 800;
+  line-height: 1.56;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.62);
+}
+
+.sustainability-story__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: clamp(86px, 9vw, 128px) 24px clamp(92px, 10vw, 138px);
+  background: #fbf8ea;
+}
+
+.sustainability-story__service {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 360px);
+  align-items: center;
+  gap: clamp(46px, 7vw, 112px);
+  width: min(1040px, 100%);
+  margin: 0 auto clamp(66px, 8vw, 104px);
+}
+
+.sustainability-story__service-copy {
+  display: grid;
+  gap: 18px;
+}
+
+.sustainability-story__service-copy h2 {
+  margin: 0 0 8px;
+  color: #35342d;
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.sustainability-story__service-copy p {
+  width: min(620px, 100%);
+  margin: 0;
+  color: #383a36;
+  font-size: clamp(1rem, 1.08vw, 1.16rem);
+  font-weight: 500;
+  line-height: 1.68;
+}
+
+.sustainability-story__logo {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  justify-self: end;
+}
+
+.sustainability-story__slides {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 2.4vw, 34px);
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.sustainability-story__slide {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #e7e2cf;
+}
+
+.sustainability-story__slide img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform 260ms ease;
+}
+
+.sustainability-story__slide:hover img {
+  transform: scale(1.035);
+}
+
+.sustainability-tech {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(82px, 9vw, 124px) 24px;
+  background:
+    radial-gradient(circle at 14% 18%, rgba(244, 123, 32, 0.16), transparent 28%),
+    linear-gradient(135deg, #141414, #2f343a 58%, #101114);
+  color: #fff;
+}
+
+.sustainability-tech::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-image:
+    radial-gradient(ellipse at 20% 20%, rgba(255, 255, 255, 0.07) 0 1px, transparent 1px),
+    radial-gradient(ellipse at 80% 35%, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px);
+  background-size: 78px 46px, 112px 70px;
+  opacity: 0.34;
+  pointer-events: none;
+}
+
+.sustainability-tech__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(260px, 390px) minmax(0, 560px);
+  align-items: center;
+  gap: clamp(48px, 7vw, 110px);
+  width: min(980px, 100%);
+  margin: 0 auto;
+}
+
+.sustainability-tech__inner img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.sustainability-tech__copy {
+  display: grid;
+  gap: 18px;
+}
+
+.sustainability-tech__copy h2,
+.sustainability-wellness h2,
+.sustainability-responsibility h2 {
+  margin: 0;
+  font-size: clamp(1.7rem, 2.3vw, 2.6rem);
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.sustainability-tech__copy p,
+.sustainability-wellness p,
+.sustainability-responsibility p {
+  margin: 0;
+  font-size: clamp(0.98rem, 1.05vw, 1.14rem);
+  font-weight: 700;
+  line-height: 1.58;
+}
+
+.sustainability-wellness {
+  padding: clamp(72px, 8vw, 108px) 24px;
+  background: #fbf8ea;
+  color: #36352f;
+  text-align: center;
+}
+
+.sustainability-wellness__inner {
+  display: grid;
+  gap: 20px;
+  width: min(980px, 100%);
+  margin: 0 auto;
+}
+
+.sustainability-wellness p {
+  width: min(900px, 100%);
+  margin: 0 auto;
+  color: #56544d;
+  font-weight: 500;
+}
+
+.sustainability-responsibility {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 360px;
+  padding: clamp(72px, 8vw, 112px) 24px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(16, 17, 20, 0.7), rgba(16, 17, 20, 0.78)),
+    var(--sustainability-responsibility-bg) center / cover no-repeat fixed;
+  color: #fff;
+  text-align: center;
+}
+
+.sustainability-responsibility__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 18px;
+  width: min(900px, 100%);
+  padding: clamp(26px, 4vw, 46px);
+}
+
+.sustainability-responsibility__inner::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 50% 12%, rgba(0, 0, 0, 0.28), transparent 62%),
+    rgba(10, 12, 14, 0.4);
+  box-shadow: 0 24px 90px rgba(0, 0, 0, 0.42);
+}
+
+.sustainability-responsibility p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+@media (max-width: 860px) {
+  .sustainability-story__hero {
+    min-height: 700px;
+    padding: 170px 20px 70px;
+    background: var(--sustainability-hero-bg) center / cover no-repeat;
+  }
+
+  .sustainability-story__hero-inner {
+    width: min(520px, calc(100vw - 28px));
+    padding: 24px 16px;
+    overflow-wrap: normal;
+  }
+
+  .sustainability-story__hero h1 {
+    font-size: clamp(2.85rem, 11.5vw, 5rem);
+  }
+
+  .sustainability-story__hero p {
+    font-size: clamp(0.98rem, 4vw, 1.16rem);
+  }
+
+  .sustainability-story__content {
+    padding: 58px 20px 72px;
+  }
+
+  .sustainability-story__service {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 48px;
+  }
+
+  .sustainability-story__logo {
+    max-width: 280px;
+    justify-self: center;
+  }
+
+  .sustainability-story__slides {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    width: min(420px, 100%);
+  }
+
+  .sustainability-story__slide img {
+    aspect-ratio: 4 / 3.2;
+  }
+
+  .sustainability-tech {
+    padding: 62px 20px;
+  }
+
+  .sustainability-tech__inner {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    width: min(420px, 100%);
+  }
+
+  .sustainability-tech__inner img {
+    aspect-ratio: 4 / 4.8;
+  }
+
+  .sustainability-wellness {
+    padding: 58px 20px;
+  }
+
+  .sustainability-responsibility {
+    min-height: 390px;
+    padding: 64px 20px;
+    background:
+      linear-gradient(180deg, rgba(16, 17, 20, 0.7), rgba(16, 17, 20, 0.78)),
+      var(--sustainability-responsibility-bg) center / cover no-repeat;
+  }
+
+  .sustainability-responsibility__inner {
+    width: min(520px, calc(100vw - 32px));
+    padding: 26px 18px;
+  }
+}
+
+@media (max-width: 520px) {
+  .sustainability-story__hero h1 {
+    font-size: clamp(2.45rem, 10.8vw, 4rem);
+  }
+
+  .sustainability-story__hero p,
+  .sustainability-tech__copy p,
+  .sustainability-wellness p,
+  .sustainability-responsibility p {
+    line-height: 1.62;
+  }
+
+  .sustainability-story__logo {
+    max-width: 220px;
+  }
+}

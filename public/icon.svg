@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Hatip İnşaat">
+  <rect width="512" height="512" fill="#0d3a37"/>
+  <circle cx="256" cy="256" r="184" fill="none" stroke="#f47b20" stroke-width="28"/>
+  <text x="256" y="302" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="174" font-weight="800">H</text>
+</svg>

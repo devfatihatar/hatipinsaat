@@ -1,0 +1,296 @@
+﻿@media (prefers-reduced-motion: reduce) {
+  .hero__video {
+    animation: none;
+    transform: translateZ(0);
+  }
+
+  .hero__scroll-cue {
+    animation: none;
+  }
+
+  .signature-projects__card {
+    animation: none;
+  }
+
+  .blog-preview__card {
+    animation: none;
+  }
+
+}
+
+@media (max-width: 860px) {
+  .topbar {
+    min-height: auto;
+    padding: 14px 0;
+  }
+
+  .nav,
+  .topbar__phone {
+    display: none;
+  }
+
+  .project-band {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 720px;
+  }
+
+  .hero__content {
+    padding: 128px 0 72px;
+  }
+
+  .campaign-modal {
+    align-items: end;
+    justify-items: center;
+    padding: 12px;
+  }
+
+  .campaign-modal__panel {
+    grid-template-columns: 1fr;
+    width: min(520px, calc(100vw - 24px));
+    max-height: calc(100vh - 24px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: var(--radius);
+  }
+
+  .campaign-modal__media {
+    min-height: 330px;
+  }
+
+  .campaign-modal__image {
+    width: min(68%, 250px);
+    border-width: 5px;
+  }
+
+  .campaign-modal__image--left {
+    top: 34px;
+    left: -34px;
+  }
+
+  .campaign-modal__image--right {
+    right: -10px;
+    bottom: 28px;
+  }
+
+  .campaign-modal__content {
+    min-height: auto;
+    width: 100%;
+    transform: none;
+    padding: 30px;
+    border-left: 0;
+  }
+
+  .stats,
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 62px 0;
+  }
+
+  .project-band {
+    padding: 32px 22px;
+  }
+
+  .contact {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .catta-intro {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 72px 22px 0;
+  }
+
+  .catta-intro__button {
+    min-width: min(100%, 320px);
+  }
+
+  .catta-intro__visual {
+    min-height: 360px;
+    margin-top: 0;
+  }
+
+  .catta-intro__visual img {
+    max-height: 420px;
+    transform: translate(18px, 1px) scale(1.04);
+  }
+
+  .signature-projects {
+    padding: 62px 0 78px;
+  }
+
+  .signature-projects__heading {
+    margin-bottom: 36px;
+  }
+
+  .signature-projects__gallery {
+    grid-template-columns: 1fr;
+    width: min(420px, calc(100vw - 70px));
+  }
+
+  .signature-projects__card {
+    height: 260px;
+  }
+
+  .signature-projects__arrow {
+    top: auto;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .signature-projects__arrow--left {
+    left: 22px;
+  }
+
+  .signature-projects__arrow--right {
+    right: 22px;
+  }
+
+  .dream-home {
+    min-height: auto;
+    justify-items: start;
+    padding: 92px 22px;
+    background:
+      linear-gradient(90deg, rgba(16, 17, 20, 0.76), rgba(16, 17, 20, 0.48)),
+      var(--dream-home-bg) center / cover no-repeat;
+  }
+
+  .dream-home__content {
+    margin: 0;
+  }
+
+  .dream-home h2 {
+    font-size: clamp(2.4rem, 10vw, 3.8rem);
+  }
+
+  .blog-preview {
+    padding: 68px 0 78px;
+  }
+
+  .blog-preview__grid {
+    grid-template-columns: 1fr;
+    width: min(440px, calc(100vw - 44px));
+    margin: 0 auto;
+  }
+
+  .blog-preview__arrow {
+    top: auto;
+    bottom: -58px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .blog-preview__arrow--left {
+    left: 22px;
+  }
+
+  .blog-preview__arrow--right {
+    right: 22px;
+  }
+
+  .blog-preview h2 {
+    text-align: left;
+  }
+
+  .blog-preview__content h3 {
+    font-size: clamp(1.65rem, 8vw, 2.4rem);
+  }
+
+  .site-footer {
+    padding-top: 48px;
+  }
+
+  .site-footer__inner {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .site-footer__bottom {
+    flex-direction: column;
+    padding: 54px 20px 18px;
+  }
+
+  .site-footer__credit {
+    right: 0;
+    bottom: 48px;
+    left: 0;
+    justify-content: center;
+  }
+
+  .floating-actions {
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .floating-actions__button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .floating-actions__button--top {
+    width: 25px;
+    height: 25px;
+  }
+
+  .floating-actions__button--top svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .floating-actions__button--whatsapp {
+    width: 54px;
+    height: 54px;
+  }
+
+  .floating-actions__button--whatsapp img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .floating-actions__hint {
+    min-height: 32px;
+    right: calc(100% - 20px);
+    padding: 0 44px 0 12px;
+    font-size: 0.68rem;
+  }
+
+}
+
+@media (max-width: 520px) {
+  .hero {
+    min-height: 680px;
+  }
+
+  .campaign-modal__content {
+    padding: 24px 20px;
+  }
+
+  .campaign-modal__media {
+    min-height: 260px;
+  }
+
+  .catta-intro,
+  .dream-home,
+  .blog-preview {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .signature-projects__gallery,
+  .blog-preview__grid {
+    width: min(100%, calc(100vw - 36px));
+  }
+
+  .signature-projects__card {
+    height: 230px;
+  }
+
+}
+
