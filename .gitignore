@@ -8,12 +8,3 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 .DS_Store
-
-# Video assets are kept locally and should not be pushed to Git.
-*.mp4
-*.mov
-*.avi
-*.mkv
-*.webm
-*.m4v
-*.wmv
